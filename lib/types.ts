@@ -34,10 +34,18 @@ export interface LedgerEntry {
 }
 
 export type PaymentStatus = "idle" | "processing" | "success" | "failed";
+
 export interface SellerSignals {
   accountAgeDays: number;
   totalReviews: number;
-  reviewShareLast7Days: number; // 0 to 1: share of all reviews posted in the last 7 days
-  duplicateReviewRatio: number; // 0 to 1: share of reviews with copied or templated text
-  returnRate: number;           // 0 to 1
+  reviewShareLast7Days: number;
+  duplicateReviewRatio: number;
+  returnRate: number;
+}
+
+export interface RunResult {
+  events: AgentEvent[];
+  products: Product[];
+  ledger: LedgerEntry[];
+  bestId: string | null;
 }

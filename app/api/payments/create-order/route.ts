@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
-import { MOCK_PRODUCTS } from "@/lib/mock";
 import { getAccessToken, PAYPAL_BASE } from "@/lib/paypal";
-
+import { getProductById } from "@/lib/catalog";
 const SPEND_LIMIT_USD = 60;
 
 export async function POST(req: Request) {
@@ -9,8 +8,8 @@ export async function POST(req: Request) {
     const { productId, requestId } = await req.json();
 
     // The price comes from the server's own data, never from the browser.
-    const product = MOCK_PRODUCTS.find((p) => p.id === productId);
-    if (!product) {
+      const product = getProductById(productId);
+        if (!product) {
       return NextResponse.json({ error: "Unknown product" }, { status: 404 });
     }
     if (product.fraud.decision === "block") {

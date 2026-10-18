@@ -3,9 +3,7 @@
 
 import { useState } from "react";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
-import type { AgentEvent, AgentName, LedgerEntry, PaymentStatus, Product } from "@/lib/types";
-import { MOCK_EVENTS, MOCK_LEDGER, MOCK_PRODUCTS } from "@/lib/mock";
-
+import type { AgentEvent, AgentName, LedgerEntry, PaymentStatus, Product, RunResult } from "@/lib/types";
 const STAGES: AgentName[] = ["Intent", "Shopping", "Verifier", "FraudShield", "Comparison"];
 const SUGGESTIONS = ["Best headphones under ₹5,000", "Smartwatch under ₹3,000", "Laptop bag under ₹1,500"];
 const inr = (n: number) => `₹${n.toLocaleString("en-IN")}`;
@@ -27,24 +25,36 @@ export default function Home() {
   const started = events.length > 0 || running;
 
   // Replace with POST /api/runs + an EventSource stream.
-  function startRun() {
+  async function startRun() {
     setRunning(true);
     setEvents([]);
     setProducts([]);
     setLedger([]);
     setSelectedId(null);
     setPayment("idle");
-    MOCK_EVENTS.forEach((e, i) =>
-      setTimeout(() => {
-        setEvents((prev) => [...prev, e]);
-        if (i === MOCK_EVENTS.length - 1) {
-          setProducts(MOCK_PRODUCTS);
-          setLedger(MOCK_LEDGER);
-          setSelectedId("p1");
-          setRunning(false);
-        }
-      }, 800 * (i + 1))
-    );
+    try {
+      const res = await fetch("/api/run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query }),
+      });
+      if (!res.ok) throw new Error("Run failed");
+      const data: RunResult = await res.json();
+      // Show each agent step one after another so the pipeline is visible.
+      data.events.forEach((e, i) =>
+        setTimeout(() => {
+          setEvents((prev) => [...prev, e]);
+          if (i === data.events.length - 1) {
+            setProducts(data.products);
+            setLedger(data.ledger);
+            setSelectedId(data.bestId);
+            setRunning(false);
+          }
+        }, 800 * (i + 1))
+      );
+    } catch {
+      setRunning(false);
+    }
   }
 
   return (
