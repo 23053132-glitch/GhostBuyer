@@ -1,0 +1,43 @@
+export type FraudDecision = "allow" | "review" | "block";
+
+export interface FraudResult {
+  score: number;
+  decision: FraudDecision;
+  reasons: string[];
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  sellerName: string;
+  priceUsd: number;
+  priceInr: number;
+  rating: number;
+  fraud: FraudResult;
+}
+
+export type AgentName = "Intent" | "Shopping" | "Comparison" | "Verifier" | "FraudShield";
+
+export interface AgentEvent {
+  id: string;
+  agent: AgentName;
+  message: string;
+  status: "done" | "blocked";
+}
+
+export interface LedgerEntry {
+  id: string;
+  from: string;
+  to: string;
+  amountInr: number;
+  purpose: string;
+}
+
+export type PaymentStatus = "idle" | "processing" | "success" | "failed";
+export interface SellerSignals {
+  accountAgeDays: number;
+  totalReviews: number;
+  reviewShareLast7Days: number; // 0 to 1: share of all reviews posted in the last 7 days
+  duplicateReviewRatio: number; // 0 to 1: share of reviews with copied or templated text
+  returnRate: number;           // 0 to 1
+}
