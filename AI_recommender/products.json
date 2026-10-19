@@ -1,0 +1,202 @@
+[
+  {
+    "id": "p001",
+    "title": "Asus Zenbook Pro Dual Screen Laptop",
+    "description": "The Asus Zenbook Pro Dual Screen Laptop is a high-performance device with dual screens, providing productivity and versatility for creative professionals.",
+    "price": 1799.99,
+    "currency": "USD",
+    "category": "laptops",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/79"
+  },
+  {
+    "id": "p002",
+    "title": "Silver Pot With Glass Cap",
+    "description": "The Silver Pot with Glass Cap is a stylish and functional cookware item for boiling, simmering, and preparing delicious meals. Its glass cap allows you to monitor cooking progress.",
+    "price": 39.99,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/71"
+  },
+  {
+    "id": "p003",
+    "title": "Decoration Swing",
+    "description": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+    "price": 59.99,
+    "currency": "USD",
+    "category": "home-decoration",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/43"
+  },
+  {
+    "id": "p004",
+    "title": "Fine Mesh Strainer",
+    "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking. Limited stock, hurry. No returns.",
+    "price": 2.44,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "QuickCart",
+    "sourceUrl": "https://dummyjson.com/products/57"
+  },
+  {
+    "id": "p005",
+    "title": "Boxed Blender",
+    "description": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
+    "price": 39.99,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/51"
+  },
+  {
+    "id": "p006",
+    "title": "Water",
+    "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+    "price": 0.99,
+    "currency": "USD",
+    "category": "groceries",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/42"
+  },
+  {
+    "id": "p007",
+    "title": "Brown Leather Belt Watch",
+    "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look. Today only. Pay within 1 hour. Contact seller on chat.",
+    "price": 29.83,
+    "currency": "USD",
+    "category": "mens-watches",
+    "marketplace": "MegaDeals24",
+    "sourceUrl": "https://dummyjson-store.example/products/93"
+  },
+  {
+    "id": "p008",
+    "title": "Spoon",
+    "description": "The Spoon is a versatile kitchen utensil for stirring, serving, and tasting. Its ergonomic design and durable construction make it an essential tool for every kitchen.",
+    "price": 4.99,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/74"
+  },
+  {
+    "id": "p009",
+    "title": "Eyeshadow Palette with Mirror",
+    "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+    "price": 19.99,
+    "currency": "USD",
+    "category": "beauty",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/2"
+  },
+  {
+    "id": "p010",
+    "title": "Black Aluminium Cup",
+    "description": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
+    "price": 5.99,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "QuickCart",
+    "sourceUrl": "https://dummyjson.com/products/9001"
+  },
+  {
+    "id": "p011",
+    "title": "Yellow Peeler",
+    "description": "The Yellow Peeler is a handy tool for peeling fruits and vegetables with ease. Its bright yellow color adds a cheerful touch to your kitchen gadgets. Today only. Pay within 1 hour. Contact seller on chat.",
+    "price": 1.48,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "MegaDeals24",
+    "sourceUrl": "https://dummyjson-store.example/products/77"
+  },
+  {
+    "id": "p012",
+    "title": "Lemon",
+    "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
+    "price": 0.79,
+    "currency": "USD",
+    "category": "groceries",
+    "marketplace": "TrendMart",
+    "sourceUrl": "https://dummyjson.com/products/38"
+  },
+  {
+    "id": "p013",
+    "title": "Annibale Colombo Bed",
+    "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+    "price": 1899.99,
+    "currency": "USD",
+    "category": "furniture",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/11"
+  },
+  {
+    "id": "p014",
+    "title": "Gucci Bloom Eau de",
+    "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+    "price": 79.99,
+    "currency": "USD",
+    "category": "fragrances",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/10"
+  },
+  {
+    "id": "p015",
+    "title": "Sports Sneakers Off White Red",
+    "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
+    "price": 109.99,
+    "currency": "USD",
+    "category": "mens-shoes",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/92"
+  },
+  {
+    "id": "p016",
+    "title": "Apple",
+    "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+    "price": 1.99,
+    "currency": "USD",
+    "category": "groceries",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/16"
+  },
+  {
+    "id": "p017",
+    "title": "Microwave Oven",
+    "description": "The Microwave Oven is a versatile kitchen appliance for quick and efficient cooking, reheating, and defrosting. Its compact size makes it suitable for various kitchen setups.",
+    "price": 89.99,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "DummyJSON Store",
+    "sourceUrl": "https://dummyjson.com/products/66"
+  },
+  {
+    "id": "p018",
+    "title": "Spice Rack",
+    "description": "The Spice Rack is a convenient organizer for your spices and seasonings. Keep your kitchen essentials within reach and neatly arranged with this stylish spice rack.",
+    "price": 49.97,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "MegaDeals24",
+    "sourceUrl": "https://dummyjson.com/products/73"
+  },
+  {
+    "id": "p019",
+    "title": "Electric Stove",
+    "description": "The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs. Limited stock, hurry. No returns.",
+    "price": 8.55,
+    "currency": "USD",
+    "category": "kitchen-accessories",
+    "marketplace": "QuickCart",
+    "sourceUrl": "https://dummyjson.com/products/56"
+  },
+  {
+    "id": "p020",
+    "title": "Plant Pot",
+    "description": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+    "price": 14.99,
+    "currency": "USD",
+    "category": "home-decoration",
+    "marketplace": "QuickCart",
+    "sourceUrl": "https://dummyjson.com/products/9000"
+  }
+]

@@ -1,0 +1,1509 @@
+{
+  "Decoration Swing": {
+    "dummyjsonId": 43,
+    "category": "home-decoration",
+    "prices": {
+      "BazaarHub": 56.06,
+      "ValueVilla": 61.62,
+      "TrendMart": 59.58,
+      "ShopNest": 55.89
+    },
+    "medianPrice": 57.82,
+    "minPrice": 55.89,
+    "maxPrice": 61.62,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Water": {
+    "dummyjsonId": 42,
+    "category": "groceries",
+    "prices": {
+      "BazaarHub": 0.92,
+      "ShopNest": 0.93,
+      "ValueVilla": 0.99,
+      "MegaMart": 1.07,
+      "TrendMart": 0.94
+    },
+    "medianPrice": 0.94,
+    "minPrice": 0.92,
+    "maxPrice": 1.07,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Sports Sneakers Off White Red": {
+    "dummyjsonId": 92,
+    "category": "mens-shoes",
+    "prices": {
+      "MegaMart": 114.07,
+      "ShopNest": 102.28,
+      "TrendMart": 106.05
+    },
+    "medianPrice": 106.05,
+    "minPrice": 102.28,
+    "maxPrice": 114.07,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Gucci Bloom Eau de": {
+    "dummyjsonId": 10,
+    "category": "fragrances",
+    "prices": {
+      "BazaarHub": 82.72,
+      "TrendMart": 82.55,
+      "MegaMart": 84.5,
+      "ShopNest": 75.24,
+      "ValueVilla": 82.73
+    },
+    "medianPrice": 82.72,
+    "minPrice": 75.24,
+    "maxPrice": 84.5,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Microwave Oven": {
+    "dummyjsonId": 66,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 95.61,
+      "ShopNest": 92.95,
+      "MegaMart": 93.93
+    },
+    "medianPrice": 93.93,
+    "minPrice": 92.95,
+    "maxPrice": 95.61,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Boxed Blender": {
+    "dummyjsonId": 51,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 41.47,
+      "ValueVilla": 40.42,
+      "BazaarHub": 39.19,
+      "TrendMart": 43.14
+    },
+    "medianPrice": 40.95,
+    "minPrice": 39.19,
+    "maxPrice": 43.14,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Eyeshadow Palette with Mirror": {
+    "dummyjsonId": 2,
+    "category": "beauty",
+    "prices": {
+      "BazaarHub": 21.89,
+      "ShopNest": 21.31,
+      "TrendMart": 19.54,
+      "MegaMart": 22.31,
+      "ValueVilla": 18.86
+    },
+    "medianPrice": 21.31,
+    "minPrice": 18.86,
+    "maxPrice": 22.31,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Silver Pot With Glass Cap": {
+    "dummyjsonId": 71,
+    "category": "kitchen-accessories",
+    "prices": {
+      "BazaarHub": 40.16,
+      "TrendMart": 44.49,
+      "ShopNest": 37.41,
+      "MegaMart": 41.25
+    },
+    "medianPrice": 40.7,
+    "minPrice": 37.41,
+    "maxPrice": 44.49,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Apple": {
+    "dummyjsonId": 16,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 2.06,
+      "MegaMart": 2.01,
+      "ValueVilla": 2.17,
+      "BazaarHub": 2.21
+    },
+    "medianPrice": 2.12,
+    "minPrice": 2.01,
+    "maxPrice": 2.21,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Asus Zenbook Pro Dual Screen Laptop": {
+    "dummyjsonId": 79,
+    "category": "laptops",
+    "prices": {
+      "ShopNest": 1888.96,
+      "MegaMart": 2013.5,
+      "TrendMart": 1951.88,
+      "BazaarHub": 1758.44
+    },
+    "medianPrice": 1920.42,
+    "minPrice": 1758.44,
+    "maxPrice": 2013.5,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Spoon": {
+    "dummyjsonId": 74,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 4.76,
+      "ShopNest": 4.71,
+      "BazaarHub": 4.65,
+      "MegaMart": 5.36
+    },
+    "medianPrice": 4.73,
+    "minPrice": 4.65,
+    "maxPrice": 5.36,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Annibale Colombo Bed": {
+    "dummyjsonId": 11,
+    "category": "furniture",
+    "prices": {
+      "BazaarHub": 2096.38,
+      "ValueVilla": 1936.66,
+      "MegaMart": 1811.21
+    },
+    "medianPrice": 1936.66,
+    "minPrice": 1811.21,
+    "maxPrice": 2096.38,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Electric Stove": {
+    "dummyjsonId": 56,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 54.63,
+      "TrendMart": 48.77,
+      "ShopNest": 50.14,
+      "BazaarHub": 49.58
+    },
+    "medianPrice": 49.86,
+    "minPrice": 48.77,
+    "maxPrice": 54.63,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Fine Mesh Strainer": {
+    "dummyjsonId": 57,
+    "category": "kitchen-accessories",
+    "prices": {
+      "BazaarHub": 9.49,
+      "MegaMart": 10.51,
+      "ShopNest": 9.21,
+      "TrendMart": 10.85
+    },
+    "medianPrice": 10.0,
+    "minPrice": 9.21,
+    "maxPrice": 10.85,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Spice Rack": {
+    "dummyjsonId": 73,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 18.97,
+      "MegaMart": 20.53,
+      "ShopNest": 20.83
+    },
+    "medianPrice": 20.53,
+    "minPrice": 18.97,
+    "maxPrice": 20.83,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Plant Pot": {
+    "dummyjsonId": 46,
+    "category": "home-decoration",
+    "prices": {
+      "BazaarHub": 14.98,
+      "ShopNest": 14.97,
+      "MegaMart": 15.23,
+      "TrendMart": 14.99
+    },
+    "medianPrice": 14.98,
+    "minPrice": 14.97,
+    "maxPrice": 15.23,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Black Aluminium Cup": {
+    "dummyjsonId": 49,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ShopNest": 5.71,
+      "BazaarHub": 5.92,
+      "ValueVilla": 5.57
+    },
+    "medianPrice": 5.71,
+    "minPrice": 5.57,
+    "maxPrice": 5.92,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Brown Leather Belt Watch": {
+    "dummyjsonId": 93,
+    "category": "mens-watches",
+    "prices": {
+      "MegaMart": 84.62,
+      "BazaarHub": 89.34,
+      "TrendMart": 83.25
+    },
+    "medianPrice": 84.62,
+    "minPrice": 83.25,
+    "maxPrice": 89.34,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Yellow Peeler": {
+    "dummyjsonId": 77,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 6.27,
+      "ValueVilla": 6.66,
+      "ShopNest": 6.23
+    },
+    "medianPrice": 6.27,
+    "minPrice": 6.23,
+    "maxPrice": 6.66,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Rice": {
+    "dummyjsonId": 38,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 6.09,
+      "MegaMart": 5.88,
+      "BazaarHub": 5.68,
+      "TrendMart": 6.41
+    },
+    "medianPrice": 5.98,
+    "minPrice": 5.68,
+    "maxPrice": 6.41,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Lemon": {
+    "dummyjsonId": 31,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 0.76,
+      "ValueVilla": 0.88,
+      "MegaMart": 0.78,
+      "ShopNest": 0.84,
+      "BazaarHub": 0.87
+    },
+    "medianPrice": 0.84,
+    "minPrice": 0.76,
+    "maxPrice": 0.88,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Dog Food": {
+    "dummyjsonId": 22,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 12.11,
+      "ShopNest": 10.89,
+      "MegaMart": 10.6,
+      "BazaarHub": 11.3,
+      "ValueVilla": 11.22
+    },
+    "medianPrice": 11.22,
+    "minPrice": 10.6,
+    "maxPrice": 12.11,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Mulberry": {
+    "dummyjsonId": 33,
+    "category": "groceries",
+    "prices": {
+      "BazaarHub": 4.79,
+      "MegaMart": 5.08,
+      "ShopNest": 5.32,
+      "ValueVilla": 5.58,
+      "TrendMart": 5.38
+    },
+    "medianPrice": 5.32,
+    "minPrice": 4.79,
+    "maxPrice": 5.58,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Rolex Datejust": {
+    "dummyjsonId": 97,
+    "category": "mens-watches",
+    "prices": {
+      "TrendMart": 11103.89,
+      "BazaarHub": 12181.44,
+      "MegaMart": 12293.67,
+      "ValueVilla": 12220.99
+    },
+    "medianPrice": 12201.22,
+    "minPrice": 11103.89,
+    "maxPrice": 12293.67,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Lenovo Yoga 920": {
+    "dummyjsonId": 81,
+    "category": "laptops",
+    "prices": {
+      "ShopNest": 1115.41,
+      "BazaarHub": 1086.29,
+      "MegaMart": 1118.17,
+      "TrendMart": 1228.74
+    },
+    "medianPrice": 1116.79,
+    "minPrice": 1086.29,
+    "maxPrice": 1228.74,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Black Whisk": {
+    "dummyjsonId": 50,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ShopNest": 10.86,
+      "ValueVilla": 9.43,
+      "TrendMart": 9.97,
+      "BazaarHub": 10.61,
+      "MegaMart": 9.59
+    },
+    "medianPrice": 9.97,
+    "minPrice": 9.43,
+    "maxPrice": 10.86,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Gigabyte Aorus Men Tshirt": {
+    "dummyjsonId": 84,
+    "category": "mens-shirts",
+    "prices": {
+      "ValueVilla": 26.99,
+      "TrendMart": 27.85,
+      "ShopNest": 24.97
+    },
+    "medianPrice": 26.99,
+    "minPrice": 24.97,
+    "maxPrice": 27.85,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Honey Jar": {
+    "dummyjsonId": 27,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 6.47,
+      "BazaarHub": 7.26,
+      "MegaMart": 7.08,
+      "TrendMart": 7.35
+    },
+    "medianPrice": 7.17,
+    "minPrice": 6.47,
+    "maxPrice": 7.35,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Nike Air Jordan 1 Red And Black": {
+    "dummyjsonId": 88,
+    "category": "mens-shoes",
+    "prices": {
+      "MegaMart": 154.45,
+      "ValueVilla": 141.92,
+      "TrendMart": 138.42,
+      "BazaarHub": 167.12,
+      "ShopNest": 157.48
+    },
+    "medianPrice": 154.45,
+    "minPrice": 138.42,
+    "maxPrice": 167.12,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Nescafe Coffee": {
+    "dummyjsonId": 34,
+    "category": "groceries",
+    "prices": {
+      "BazaarHub": 7.75,
+      "ValueVilla": 7.82,
+      "ShopNest": 7.74,
+      "TrendMart": 8.29,
+      "MegaMart": 7.77
+    },
+    "medianPrice": 7.77,
+    "minPrice": 7.74,
+    "maxPrice": 8.29,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Dolce Shine Eau de": {
+    "dummyjsonId": 9,
+    "category": "fragrances",
+    "prices": {
+      "BazaarHub": 76.96,
+      "ShopNest": 73.66,
+      "TrendMart": 75.8,
+      "MegaMart": 71.62
+    },
+    "medianPrice": 74.73,
+    "minPrice": 71.62,
+    "maxPrice": 76.96,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Bamboo Spatula": {
+    "dummyjsonId": 48,
+    "category": "kitchen-accessories",
+    "prices": {
+      "BazaarHub": 8.59,
+      "MegaMart": 8.32,
+      "TrendMart": 8.59,
+      "ShopNest": 7.59,
+      "ValueVilla": 7.58
+    },
+    "medianPrice": 8.32,
+    "minPrice": 7.58,
+    "maxPrice": 8.59,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Grater Black": {
+    "dummyjsonId": 60,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ShopNest": 12.05,
+      "MegaMart": 10.24,
+      "BazaarHub": 10.53,
+      "TrendMart": 10.2,
+      "ValueVilla": 10.33
+    },
+    "medianPrice": 10.33,
+    "minPrice": 10.2,
+    "maxPrice": 12.05,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Knife": {
+    "dummyjsonId": 64,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 14.77,
+      "ShopNest": 16.71,
+      "ValueVilla": 15.61,
+      "BazaarHub": 14.39
+    },
+    "medianPrice": 15.19,
+    "minPrice": 14.39,
+    "maxPrice": 16.71,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Tray": {
+    "dummyjsonId": 75,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 18.01,
+      "MegaMart": 18.61,
+      "TrendMart": 18.83,
+      "ShopNest": 16.51
+    },
+    "medianPrice": 18.31,
+    "minPrice": 16.51,
+    "maxPrice": 18.83,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "House Showpiece Plant": {
+    "dummyjsonId": 45,
+    "category": "home-decoration",
+    "prices": {
+      "BazaarHub": 39.93,
+      "ValueVilla": 39.32,
+      "ShopNest": 42.16,
+      "MegaMart": 40.22,
+      "TrendMart": 38.49
+    },
+    "medianPrice": 39.93,
+    "minPrice": 38.49,
+    "maxPrice": 42.16,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Amazon Echo Plus": {
+    "dummyjsonId": 99,
+    "category": "mobile-accessories",
+    "prices": {
+      "ShopNest": 94.85,
+      "BazaarHub": 109.65,
+      "TrendMart": 111.34,
+      "ValueVilla": 96.38
+    },
+    "medianPrice": 103.02,
+    "minPrice": 94.85,
+    "maxPrice": 111.34,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Chopping Board": {
+    "dummyjsonId": 53,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 14.52,
+      "MegaMart": 14.11,
+      "ShopNest": 12.37
+    },
+    "medianPrice": 14.11,
+    "minPrice": 12.37,
+    "maxPrice": 14.52,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Man Short Sleeve Shirt": {
+    "dummyjsonId": 86,
+    "category": "mens-shirts",
+    "prices": {
+      "MegaMart": 19.17,
+      "ValueVilla": 19.66,
+      "BazaarHub": 21.28,
+      "TrendMart": 18.47
+    },
+    "medianPrice": 19.41,
+    "minPrice": 18.47,
+    "maxPrice": 21.28,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Bedside Table African Cherry": {
+    "dummyjsonId": 13,
+    "category": "furniture",
+    "prices": {
+      "ValueVilla": 295.88,
+      "MegaMart": 313.43,
+      "TrendMart": 306.73,
+      "ShopNest": 279.85,
+      "BazaarHub": 335.09
+    },
+    "medianPrice": 306.73,
+    "minPrice": 279.85,
+    "maxPrice": 335.09,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Red Onions": {
+    "dummyjsonId": 37,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 1.94,
+      "MegaMart": 2.19,
+      "BazaarHub": 1.9
+    },
+    "medianPrice": 1.94,
+    "minPrice": 1.9,
+    "maxPrice": 2.19,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Fish Steak": {
+    "dummyjsonId": 24,
+    "category": "groceries",
+    "prices": {
+      "ValueVilla": 14.24,
+      "TrendMart": 16.55,
+      "BazaarHub": 15.5
+    },
+    "medianPrice": 15.5,
+    "minPrice": 14.24,
+    "maxPrice": 16.55,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Strawberry": {
+    "dummyjsonId": 40,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 4.01,
+      "ShopNest": 3.73,
+      "BazaarHub": 4.42,
+      "ValueVilla": 4.18,
+      "MegaMart": 4.31
+    },
+    "medianPrice": 4.18,
+    "minPrice": 3.73,
+    "maxPrice": 4.42,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Tissue Paper Box": {
+    "dummyjsonId": 41,
+    "category": "groceries",
+    "prices": {
+      "MegaMart": 2.42,
+      "BazaarHub": 2.35,
+      "ShopNest": 2.3
+    },
+    "medianPrice": 2.35,
+    "minPrice": 2.3,
+    "maxPrice": 2.42,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Chicken Meat": {
+    "dummyjsonId": 19,
+    "category": "groceries",
+    "prices": {
+      "ValueVilla": 10.24,
+      "TrendMart": 9.67,
+      "MegaMart": 9.41,
+      "ShopNest": 9.51,
+      "BazaarHub": 9.29
+    },
+    "medianPrice": 9.51,
+    "minPrice": 9.29,
+    "maxPrice": 10.24,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Mug Tree Stand": {
+    "dummyjsonId": 67,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 17.14,
+      "MegaMart": 15.64,
+      "ValueVilla": 16.31
+    },
+    "medianPrice": 16.31,
+    "minPrice": 15.64,
+    "maxPrice": 17.14,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Ice Cube Tray": {
+    "dummyjsonId": 62,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 6.7,
+      "MegaMart": 5.56,
+      "ShopNest": 5.53
+    },
+    "medianPrice": 5.56,
+    "minPrice": 5.53,
+    "maxPrice": 6.7,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Hand Blender": {
+    "dummyjsonId": 61,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 38.73,
+      "BazaarHub": 32.93,
+      "TrendMart": 37.92,
+      "ValueVilla": 35.22,
+      "ShopNest": 35.65
+    },
+    "medianPrice": 35.65,
+    "minPrice": 32.93,
+    "maxPrice": 38.73,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Dior J'adore": {
+    "dummyjsonId": 8,
+    "category": "fragrances",
+    "prices": {
+      "MegaMart": 100.47,
+      "TrendMart": 88.96,
+      "ValueVilla": 97.77,
+      "ShopNest": 95.51
+    },
+    "medianPrice": 96.64,
+    "minPrice": 88.96,
+    "maxPrice": 100.47,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Potatoes": {
+    "dummyjsonId": 35,
+    "category": "groceries",
+    "prices": {
+      "BazaarHub": 2.11,
+      "ValueVilla": 2.39,
+      "MegaMart": 2.51,
+      "ShopNest": 2.3,
+      "TrendMart": 2.13
+    },
+    "medianPrice": 2.3,
+    "minPrice": 2.11,
+    "maxPrice": 2.51,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Apple Airpods": {
+    "dummyjsonId": 100,
+    "category": "mobile-accessories",
+    "prices": {
+      "ValueVilla": 120.77,
+      "TrendMart": 124.41,
+      "MegaMart": 126.59,
+      "ShopNest": 119.68,
+      "BazaarHub": 129.06
+    },
+    "medianPrice": 124.41,
+    "minPrice": 119.68,
+    "maxPrice": 129.06,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Table Lamp": {
+    "dummyjsonId": 47,
+    "category": "home-decoration",
+    "prices": {
+      "MegaMart": 55.65,
+      "TrendMart": 49.09,
+      "ShopNest": 49.56,
+      "ValueVilla": 46.0
+    },
+    "medianPrice": 49.33,
+    "minPrice": 46.0,
+    "maxPrice": 55.65,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Powder Canister": {
+    "dummyjsonId": 3,
+    "category": "beauty",
+    "prices": {
+      "ShopNest": 14.53,
+      "ValueVilla": 16.12,
+      "BazaarHub": 14.06,
+      "MegaMart": 16.24
+    },
+    "medianPrice": 15.32,
+    "minPrice": 14.06,
+    "maxPrice": 16.24,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Carbon Steel Wok": {
+    "dummyjsonId": 52,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 27.73,
+      "ShopNest": 29.42,
+      "BazaarHub": 28.99
+    },
+    "medianPrice": 28.99,
+    "minPrice": 27.73,
+    "maxPrice": 29.42,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Beef Steak": {
+    "dummyjsonId": 17,
+    "category": "groceries",
+    "prices": {
+      "MegaMart": 13.82,
+      "BazaarHub": 13.23,
+      "TrendMart": 12.69,
+      "ValueVilla": 13.56,
+      "ShopNest": 12.33
+    },
+    "medianPrice": 13.23,
+    "minPrice": 12.33,
+    "maxPrice": 13.82,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Soft Drinks": {
+    "dummyjsonId": 39,
+    "category": "groceries",
+    "prices": {
+      "MegaMart": 2.16,
+      "ValueVilla": 2.06,
+      "TrendMart": 2.19,
+      "ShopNest": 2.1,
+      "BazaarHub": 2.11
+    },
+    "medianPrice": 2.11,
+    "minPrice": 2.06,
+    "maxPrice": 2.19,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Glass": {
+    "dummyjsonId": 59,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ShopNest": 4.72,
+      "MegaMart": 4.95,
+      "ValueVilla": 4.7
+    },
+    "medianPrice": 4.72,
+    "minPrice": 4.7,
+    "maxPrice": 4.95,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Plate": {
+    "dummyjsonId": 69,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 4.17,
+      "ShopNest": 4.21,
+      "TrendMart": 4.06,
+      "ValueVilla": 3.67
+    },
+    "medianPrice": 4.12,
+    "minPrice": 3.67,
+    "maxPrice": 4.21,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Eggs": {
+    "dummyjsonId": 23,
+    "category": "groceries",
+    "prices": {
+      "MegaMart": 3.07,
+      "ShopNest": 3.2,
+      "TrendMart": 3.03
+    },
+    "medianPrice": 3.07,
+    "minPrice": 3.03,
+    "maxPrice": 3.2,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Kitchen Sieve": {
+    "dummyjsonId": 63,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 8.56,
+      "BazaarHub": 7.72,
+      "MegaMart": 8.39
+    },
+    "medianPrice": 8.39,
+    "minPrice": 7.72,
+    "maxPrice": 8.56,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Green Bell Pepper": {
+    "dummyjsonId": 25,
+    "category": "groceries",
+    "prices": {
+      "ValueVilla": 1.42,
+      "MegaMart": 1.26,
+      "ShopNest": 1.2,
+      "BazaarHub": 1.35
+    },
+    "medianPrice": 1.31,
+    "minPrice": 1.2,
+    "maxPrice": 1.42,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Calvin Klein CK One": {
+    "dummyjsonId": 6,
+    "category": "fragrances",
+    "prices": {
+      "ShopNest": 48.53,
+      "BazaarHub": 53.42,
+      "ValueVilla": 49.03
+    },
+    "medianPrice": 49.03,
+    "minPrice": 48.53,
+    "maxPrice": 53.42,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Chanel Coco Noir Eau De": {
+    "dummyjsonId": 7,
+    "category": "fragrances",
+    "prices": {
+      "BazaarHub": 126.58,
+      "ShopNest": 137.06,
+      "MegaMart": 137.59,
+      "ValueVilla": 137.16,
+      "TrendMart": 127.15
+    },
+    "medianPrice": 137.06,
+    "minPrice": 126.58,
+    "maxPrice": 137.59,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Pan": {
+    "dummyjsonId": 68,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 27.96,
+      "ValueVilla": 25.74,
+      "BazaarHub": 24.55,
+      "MegaMart": 23.42,
+      "ShopNest": 25.35
+    },
+    "medianPrice": 25.35,
+    "minPrice": 23.42,
+    "maxPrice": 27.96,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Blue & Black Check Shirt": {
+    "dummyjsonId": 83,
+    "category": "mens-shirts",
+    "prices": {
+      "ValueVilla": 33.55,
+      "ShopNest": 29.91,
+      "TrendMart": 33.09,
+      "BazaarHub": 33.17
+    },
+    "medianPrice": 33.13,
+    "minPrice": 29.91,
+    "maxPrice": 33.55,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Cooking Oil": {
+    "dummyjsonId": 20,
+    "category": "groceries",
+    "prices": {
+      "MegaMart": 5.34,
+      "ShopNest": 4.85,
+      "ValueVilla": 4.95
+    },
+    "medianPrice": 4.95,
+    "minPrice": 4.85,
+    "maxPrice": 5.34,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Huawei Matebook X Pro": {
+    "dummyjsonId": 80,
+    "category": "laptops",
+    "prices": {
+      "MegaMart": 1427.4,
+      "TrendMart": 1533.31,
+      "ShopNest": 1398.33,
+      "BazaarHub": 1332.53,
+      "ValueVilla": 1553.98
+    },
+    "medianPrice": 1427.4,
+    "minPrice": 1332.53,
+    "maxPrice": 1553.98,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Family Tree Photo Frame": {
+    "dummyjsonId": 44,
+    "category": "home-decoration",
+    "prices": {
+      "ValueVilla": 29.65,
+      "MegaMart": 29.49,
+      "BazaarHub": 32.63,
+      "ShopNest": 27.6,
+      "TrendMart": 32.09
+    },
+    "medianPrice": 29.65,
+    "minPrice": 27.6,
+    "maxPrice": 32.63,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Sports Sneakers Off White & Red": {
+    "dummyjsonId": 91,
+    "category": "mens-shoes",
+    "prices": {
+      "ShopNest": 132.03,
+      "BazaarHub": 117.35,
+      "TrendMart": 119.32,
+      "MegaMart": 119.82
+    },
+    "medianPrice": 119.57,
+    "minPrice": 117.35,
+    "maxPrice": 132.03,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Cucumber": {
+    "dummyjsonId": 21,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 1.45,
+      "TrendMart": 1.39,
+      "BazaarHub": 1.57,
+      "ValueVilla": 1.56,
+      "MegaMart": 1.42
+    },
+    "medianPrice": 1.45,
+    "minPrice": 1.39,
+    "maxPrice": 1.57,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Essence Mascara Lash Princess": {
+    "dummyjsonId": 1,
+    "category": "beauty",
+    "prices": {
+      "ValueVilla": 10.76,
+      "TrendMart": 10.05,
+      "ShopNest": 9.25,
+      "BazaarHub": 10.71
+    },
+    "medianPrice": 10.38,
+    "minPrice": 9.25,
+    "maxPrice": 10.76,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Rolex Cellini Moonphase": {
+    "dummyjsonId": 96,
+    "category": "mens-watches",
+    "prices": {
+      "MegaMart": 12088.63,
+      "BazaarHub": 13864.11,
+      "TrendMart": 13132.23,
+      "ShopNest": 13916.93
+    },
+    "medianPrice": 13498.17,
+    "minPrice": 12088.63,
+    "maxPrice": 13916.93,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Fork": {
+    "dummyjsonId": 58,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 4.05,
+      "ValueVilla": 3.95,
+      "ShopNest": 3.91,
+      "MegaMart": 4.26,
+      "BazaarHub": 4.45
+    },
+    "medianPrice": 4.05,
+    "minPrice": 3.91,
+    "maxPrice": 4.45,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Longines Master Collection": {
+    "dummyjsonId": 94,
+    "category": "mens-watches",
+    "prices": {
+      "ValueVilla": 1547.19,
+      "BazaarHub": 1498.3,
+      "MegaMart": 1430.19,
+      "TrendMart": 1428.49
+    },
+    "medianPrice": 1464.24,
+    "minPrice": 1428.49,
+    "maxPrice": 1547.19,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Citrus Squeezer Yellow": {
+    "dummyjsonId": 54,
+    "category": "kitchen-accessories",
+    "prices": {
+      "MegaMart": 8.67,
+      "ValueVilla": 9.9,
+      "TrendMart": 10.06
+    },
+    "medianPrice": 9.9,
+    "minPrice": 8.67,
+    "maxPrice": 10.06,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Puma Future Rider Trainers": {
+    "dummyjsonId": 90,
+    "category": "mens-shoes",
+    "prices": {
+      "ValueVilla": 87.18,
+      "BazaarHub": 85.93,
+      "TrendMart": 92.8,
+      "ShopNest": 88.54
+    },
+    "medianPrice": 87.86,
+    "minPrice": 85.93,
+    "maxPrice": 92.8,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Green Chili Pepper": {
+    "dummyjsonId": 26,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 0.99,
+      "BazaarHub": 1.06,
+      "ShopNest": 0.95,
+      "ValueVilla": 0.96
+    },
+    "medianPrice": 0.97,
+    "minPrice": 0.95,
+    "maxPrice": 1.06,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Slotted Turner": {
+    "dummyjsonId": 72,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 10.01,
+      "TrendMart": 8.5,
+      "MegaMart": 9.18
+    },
+    "medianPrice": 9.18,
+    "minPrice": 8.5,
+    "maxPrice": 10.01,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Man Plaid Shirt": {
+    "dummyjsonId": 85,
+    "category": "mens-shirts",
+    "prices": {
+      "BazaarHub": 34.99,
+      "ShopNest": 35.31,
+      "MegaMart": 38.87,
+      "ValueVilla": 38.13,
+      "TrendMart": 38.3
+    },
+    "medianPrice": 38.13,
+    "minPrice": 34.99,
+    "maxPrice": 38.87,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Apple MacBook Pro 14 Inch Space Grey": {
+    "dummyjsonId": 78,
+    "category": "laptops",
+    "prices": {
+      "BazaarHub": 2123.79,
+      "ShopNest": 2198.27,
+      "MegaMart": 2029.3
+    },
+    "medianPrice": 2123.79,
+    "minPrice": 2029.3,
+    "maxPrice": 2198.27,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Lunch Box": {
+    "dummyjsonId": 65,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 14.48,
+      "ShopNest": 12.6,
+      "MegaMart": 12.23,
+      "BazaarHub": 12.35,
+      "TrendMart": 13.31
+    },
+    "medianPrice": 12.6,
+    "minPrice": 12.23,
+    "maxPrice": 14.48,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Kiwi": {
+    "dummyjsonId": 30,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 2.68,
+      "ValueVilla": 2.41,
+      "MegaMart": 2.75,
+      "TrendMart": 2.61,
+      "BazaarHub": 2.44
+    },
+    "medianPrice": 2.61,
+    "minPrice": 2.41,
+    "maxPrice": 2.75,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Ice Cream": {
+    "dummyjsonId": 28,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 5.89,
+      "ValueVilla": 5.16,
+      "MegaMart": 5.38
+    },
+    "medianPrice": 5.38,
+    "minPrice": 5.16,
+    "maxPrice": 5.89,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Nike Baseball Cleats": {
+    "dummyjsonId": 89,
+    "category": "mens-shoes",
+    "prices": {
+      "BazaarHub": 73.76,
+      "ValueVilla": 78.41,
+      "MegaMart": 80.96,
+      "ShopNest": 88.93,
+      "TrendMart": 83.9
+    },
+    "medianPrice": 80.96,
+    "minPrice": 73.76,
+    "maxPrice": 88.93,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Rolex Submariner Watch": {
+    "dummyjsonId": 98,
+    "category": "mens-watches",
+    "prices": {
+      "ValueVilla": 13571.75,
+      "BazaarHub": 15569.71,
+      "TrendMart": 14853.02
+    },
+    "medianPrice": 14853.02,
+    "minPrice": 13571.75,
+    "maxPrice": 15569.71,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Red Nail Polish": {
+    "dummyjsonId": 5,
+    "category": "beauty",
+    "prices": {
+      "ShopNest": 9.86,
+      "MegaMart": 9.43,
+      "ValueVilla": 8.42,
+      "BazaarHub": 8.68
+    },
+    "medianPrice": 9.05,
+    "minPrice": 8.42,
+    "maxPrice": 9.86,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Egg Slicer": {
+    "dummyjsonId": 55,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 7.4,
+      "BazaarHub": 7.44,
+      "ValueVilla": 6.94,
+      "ShopNest": 6.98
+    },
+    "medianPrice": 7.19,
+    "minPrice": 6.94,
+    "maxPrice": 7.44,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Wooden Rolling Pin": {
+    "dummyjsonId": 76,
+    "category": "kitchen-accessories",
+    "prices": {
+      "TrendMart": 12.22,
+      "ShopNest": 11.51,
+      "ValueVilla": 12.87
+    },
+    "medianPrice": 12.22,
+    "minPrice": 11.51,
+    "maxPrice": 12.87,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Annibale Colombo Sofa": {
+    "dummyjsonId": 12,
+    "category": "furniture",
+    "prices": {
+      "BazaarHub": 2432.5,
+      "ValueVilla": 2744.66,
+      "ShopNest": 2354.49
+    },
+    "medianPrice": 2432.5,
+    "minPrice": 2354.49,
+    "maxPrice": 2744.66,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Red Tongs": {
+    "dummyjsonId": 70,
+    "category": "kitchen-accessories",
+    "prices": {
+      "ValueVilla": 7.7,
+      "BazaarHub": 6.51,
+      "ShopNest": 7.26,
+      "MegaMart": 7.72,
+      "TrendMart": 6.51
+    },
+    "medianPrice": 7.26,
+    "minPrice": 6.51,
+    "maxPrice": 7.72,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Men Check Shirt": {
+    "dummyjsonId": 87,
+    "category": "mens-shirts",
+    "prices": {
+      "MegaMart": 26.04,
+      "BazaarHub": 26.09,
+      "ValueVilla": 27.95
+    },
+    "medianPrice": 26.09,
+    "minPrice": 26.04,
+    "maxPrice": 27.95,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Knoll Saarinen Executive Conference Chair": {
+    "dummyjsonId": 14,
+    "category": "furniture",
+    "prices": {
+      "TrendMart": 479.06,
+      "ShopNest": 525.24,
+      "ValueVilla": 512.47,
+      "MegaMart": 506.75,
+      "BazaarHub": 491.17
+    },
+    "medianPrice": 506.75,
+    "minPrice": 479.06,
+    "maxPrice": 525.24,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Cat Food": {
+    "dummyjsonId": 18,
+    "category": "groceries",
+    "prices": {
+      "ValueVilla": 8.47,
+      "TrendMart": 8.41,
+      "BazaarHub": 8.42,
+      "MegaMart": 9.03,
+      "ShopNest": 9.86
+    },
+    "medianPrice": 8.47,
+    "minPrice": 8.41,
+    "maxPrice": 9.86,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Juice": {
+    "dummyjsonId": 29,
+    "category": "groceries",
+    "prices": {
+      "BazaarHub": 3.74,
+      "ValueVilla": 4.23,
+      "MegaMart": 3.83,
+      "TrendMart": 4.1,
+      "ShopNest": 4.03
+    },
+    "medianPrice": 4.03,
+    "minPrice": 3.74,
+    "maxPrice": 4.23,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Milk": {
+    "dummyjsonId": 32,
+    "category": "groceries",
+    "prices": {
+      "TrendMart": 3.38,
+      "ValueVilla": 3.65,
+      "ShopNest": 3.49,
+      "BazaarHub": 3.47
+    },
+    "medianPrice": 3.48,
+    "minPrice": 3.38,
+    "maxPrice": 3.65,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Protein Powder": {
+    "dummyjsonId": 36,
+    "category": "groceries",
+    "prices": {
+      "ShopNest": 21.38,
+      "MegaMart": 21.98,
+      "BazaarHub": 19.75,
+      "ValueVilla": 19.48
+    },
+    "medianPrice": 20.56,
+    "minPrice": 19.48,
+    "maxPrice": 21.98,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "Rolex Cellini Date Black Dial": {
+    "dummyjsonId": 95,
+    "category": "mens-watches",
+    "prices": {
+      "ShopNest": 8815.32,
+      "TrendMart": 9578.82,
+      "ValueVilla": 9352.01,
+      "BazaarHub": 9730.17,
+      "MegaMart": 9983.67
+    },
+    "medianPrice": 9578.82,
+    "minPrice": 8815.32,
+    "maxPrice": 9983.67,
+    "sourceCount": 5,
+    "synthetic": true
+  },
+  "Red Lipstick": {
+    "dummyjsonId": 4,
+    "category": "beauty",
+    "prices": {
+      "ShopNest": 13.19,
+      "BazaarHub": 14.44,
+      "MegaMart": 14.43
+    },
+    "medianPrice": 14.43,
+    "minPrice": 13.19,
+    "maxPrice": 14.44,
+    "sourceCount": 3,
+    "synthetic": true
+  },
+  "Wooden Bathroom Sink With Mirror": {
+    "dummyjsonId": 15,
+    "category": "furniture",
+    "prices": {
+      "TrendMart": 884.48,
+      "ValueVilla": 765.26,
+      "BazaarHub": 864.4,
+      "ShopNest": 854.15
+    },
+    "medianPrice": 859.27,
+    "minPrice": 765.26,
+    "maxPrice": 884.48,
+    "sourceCount": 4,
+    "synthetic": true
+  },
+  "New DELL XPS 13 9300 Laptop": {
+    "dummyjsonId": 82,
+    "category": "laptops",
+    "prices": {
+      "BazaarHub": 1488.55,
+      "MegaMart": 1614.66,
+      "ValueVilla": 1403.7,
+      "TrendMart": 1439.18,
+      "ShopNest": 1605.85
+    },
+    "medianPrice": 1488.55,
+    "minPrice": 1403.7,
+    "maxPrice": 1614.66,
+    "sourceCount": 5,
+    "synthetic": true
+  }
+}

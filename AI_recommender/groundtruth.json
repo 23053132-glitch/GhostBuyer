@@ -1,0 +1,82 @@
+{
+  "p001": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p002": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p003": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p004": {
+    "verdict": "price_mismatch",
+    "reason": "listed price is far below the live page and the market price"
+  },
+  "p005": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p006": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p007": {
+    "verdict": "fake_domain",
+    "reason": "domain does not match the claimed marketplace, does not resolve, and the price is far below market"
+  },
+  "p008": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p009": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p010": {
+    "verdict": "dead_link",
+    "reason": "product page does not exist (404)"
+  },
+  "p011": {
+    "verdict": "fake_domain",
+    "reason": "domain does not match the claimed marketplace, does not resolve, and the price is far below market"
+  },
+  "p012": {
+    "verdict": "content_mismatch",
+    "reason": "URL points to a different product than the listing claims"
+  },
+  "p013": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p014": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p015": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p016": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p017": {
+    "verdict": "valid",
+    "reason": "URL resolves and title and price match the reference market"
+  },
+  "p018": {
+    "verdict": "price_mismatch",
+    "reason": "listed price is about 2.5x the market price"
+  },
+  "p019": {
+    "verdict": "price_mismatch",
+    "reason": "listed price is far below the live page and the market price"
+  },
+  "p020": {
+    "verdict": "dead_link",
+    "reason": "product page does not exist (404)"
+  }
+}
