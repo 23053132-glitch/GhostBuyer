@@ -15,7 +15,8 @@ import threading
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from agents import build_manager
+from products.agents import build_manager
+from products.embedding import ProductEmbeddingRequest, ProductEmbeddingResponse,generate_embedding,build_product_search_text
 
 app = FastAPI(title="Shopping agent service")
 
@@ -68,6 +69,18 @@ def recommend(req: RecommendRequest):
             except Exception as e:  # bad JSON or fields that don't match the contract
                 last_error = e
         raise HTTPException(status_code=502, detail=f"Agent returned invalid output: {last_error}")
+
+
+@app.post("/ai/embed-product", response_model=ProductEmbeddingResponse)
+def embed_product(req: ProductEmbeddingRequest):
+    product_text = build_product_search_text(req.name, req.description, req.category)
+    vector = generate_embedding(product_text)
+
+    return ProductEmbeddingResponse(
+        productId=req.productId,
+        embedding=vector,
+        dimensions=len(vector),
+    )
 
 
 @app.get("/health")
