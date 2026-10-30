@@ -24,7 +24,6 @@ class ProductEmbeddingResponse(BaseModel):
 
 def generate_embedding(text: str) -> list[float]:
     """Pure embedding function reusable anywhere (tools, endpoints, scripts)."""
-    # LangChain / embedding_model returns a list of embeddings
     vectors = embedding_model.embed_documents([text])
     return vectors[0]
 

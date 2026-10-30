@@ -10,10 +10,17 @@ export async function POST(req: Request) {
             where:{
                 userId:userId,
             },
-})
+        })
+        if(!merchant) return NextResponse.json({"message":"Merchant not Found"})
+          if(!merchant.dnsExpiresAt){
+            return NextResponse.json({"message":"Merchant not Found"})
+          }  
         if(isExpired(merchant.dnsExpiresAt)){
             return NextResponse.json({message:"Challenge expired, please create a new challenge"});
         }
+        if(!merchant.dnsToken){
+            return NextResponse.json({"message":"Merchant not Found"})
+          }  
         const verified=await checkDnsTxt(merchant.domain,merchant.dnsToken);
         if(verified.status==="verified"){
             await prisma.merchant.update({

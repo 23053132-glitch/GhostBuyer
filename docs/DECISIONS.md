@@ -147,6 +147,119 @@ The implementation should not assume that a merchant-provided Client ID is suffi
 
 ---
 
+
+
+---
+
+## D-007: Use Hugging Face for AI Model Access and Agent Development
+
+**Status:** Accepted
+
+### Context
+The application requires an AI backend capable of analyzing merchant performance, retrieving relevant order and product information, and executing scoring workflows through AI agents. The project also aims to minimize development complexity and inference costs during the hackathon.
+
+### Decision
+Use Hugging Face's ecosystem for convenient access to AI models and agent-development resources. Integrate Hugging Face-compatible models with the Python AI backend and use `smolagents` for agent orchestration.
+
+The implementation will prioritize models and configurations that can be used within the project's cost constraints.
+
+### Reasoning
+- Provides convenient access to a variety of AI models.
+- Simplifies experimentation with different models during development.
+- Integrates with the Python ecosystem and the `smolagents` framework.
+- Supports rapid prototyping of AI workflows without requiring the development of a custom agent framework.
+- Allows model selection to evolve based on tool-calling capabilities, reasoning quality, inference latency, and resource requirements.
+
+### Scope
+Hugging Face will be used as part of the AI development and model-access workflow. The specific model, inference provider, and deployment configuration remain subject to implementation requirements and cost constraints.
+
+The use of Hugging Face does not require all inference to run on Hugging Face-hosted infrastructure. The final model-hosting approach may depend on the selected model and its compatibility with the agent framework.
+
+---
+
+## D-008: Use CodeAgent for Merchant Scoring and Tool-Orchestrated Analysis
+
+**Status:** Accepted
+
+### Context
+The application requires an AI-driven merchant scoring workflow that gathers merchant information, retrieves associated order data, analyzes relevant performance metrics, and produces a rating with supporting reasoning.
+
+The workflow requires more than a single LLM response. It involves multiple data-retrieval operations and the interpretation of structured evidence.
+
+### Decision
+Use `CodeAgent` from `smolagents` as the primary agent type for the merchant-scoring workflow, subject to the capabilities of the selected LLM.
+
+The agent will use explicitly defined tools to retrieve merchant details and associated order information. It will then analyze the available evidence and produce a merchant rating with an explanation.
+
+### Proposed Workflow
+1. Retrieve the merchant's details, including merchant tenure and previous rating where available.
+2. Retrieve the merchant's orders and relevant order-performance information.
+3. Retrieve product information associated with those orders, including product quantities where required.
+4. Analyze the collected evidence using the project's defined scoring criteria.
+5. Consider the relative importance of merchant tenure, previous ratings, order performance, and product sales.
+6. Generate the merchant's rating and a supporting explanation based on the available evidence.
+7. Return a structured result containing the merchant identifier, assigned rating, and reasoning.
+
+### Reasoning
+- `CodeAgent` allows an agent to coordinate multi-step workflows using executable Python code.
+- Python is well suited to processing structured data and calculating performance metrics.
+- Explicit tools separate data retrieval from analysis.
+- The agent can combine evidence gathered from multiple application endpoints.
+- The workflow can be extended as additional scoring criteria become available.
+
+### Important Implementation Considerations
+- The agent must use actual retrieved data rather than inventing merchant or order information.
+- Numerical metrics should be calculated using clearly defined rules wherever possible.
+- The scoring criteria and weights should be documented and validated independently of the agent's natural-language explanation.
+- Missing or incomplete data must be handled explicitly.
+- Tool access must be restricted to the operations required by the scoring workflow.
+- Agent-generated ratings should be validated against the expected rating format and allowed range before being persisted or returned to the application.
+
+### Scope
+This decision covers the AI agent's orchestration and analysis responsibilities. The Python backend will expose the necessary tools for retrieving merchant and order data from the main application.
+
+The exact scoring formula, criterion weights, and validation rules may be refined as the implementation evolves.
+
+---
+
+## D-009: Extend the Database Schema to Support Product-Level Order Analysis
+
+**Status:** Accepted
+
+### Context
+The merchant-scoring workflow requires evidence of merchant performance, including order activity and product sales.
+
+The existing data model must expose sufficient information to associate orders with their products and determine the quantities associated with those products. Without these relationships and fields, the AI backend cannot reliably retrieve the evidence required for product-level scoring.
+
+### Decision
+Extend the Prisma/PostgreSQL database schema with the following changes:
+
+1. **Add product identification to orders:** Introduce the necessary product identifier field or relationship in the order-related data model so that an order can be associated with the relevant product.
+2. **Add quantity to products:** Introduce a `quantity` field in the product data model to represent the quantity information required by the application's product and scoring workflows.
+
+The schema changes must be reflected in the Prisma models, database migrations, and relevant application endpoints.
+
+### Reasoning
+- Product identifiers allow order records to be associated with the relevant products.
+- Quantity information provides additional evidence for product-level analysis.
+- The relationships enable the application to retrieve the data required for merchant scoring.
+- Explicit schema fields reduce dependence on unstructured data or assumptions made by the AI agent.
+- A consistent relational model improves data integrity and makes scoring inputs easier to validate.
+
+### Implementation Considerations
+- Define the appropriate relationship between orders and products according to the actual checkout and order-item model.
+- If an order can contain multiple products, use an order-item or line-item model containing the order ID, product ID, and purchased quantity rather than assuming that an order has only one product.
+- Clarify the meaning of the product `quantity` field. Current inventory quantity and quantity sold are different metrics and should not be treated interchangeably.
+- If product sales are used for scoring, calculate sold quantities from completed or otherwise eligible order items, applying the application's order-status rules.
+- Preserve referential integrity between orders, order items, and products.
+- Handle existing records when introducing new required fields, using an appropriate migration and backfill strategy.
+- Update API responses so that the Python AI backend can retrieve the required fields.
+
+### Scope
+These changes support the data requirements of the AI scoring workflow. They do not, by themselves, define the merchant-scoring formula or establish that inventory quantity is equivalent to sales volume.
+
+---
+
 ## Decision Review Process
 
 When a major technical or product decision is made or changed:

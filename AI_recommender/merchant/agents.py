@@ -8,6 +8,19 @@ from collections import Counter
 from dotenv import load_dotenv
 from smolagents import CodeAgent, OpenAIModel, ToolCallingAgent, tool
 
+from phoenix.otel import register
+from openinference.instrumentation.smolagents import SmolagentsInstrumentor
+
+# Register Phoenix as the trace destination
+tracer_provider = register(
+    project_name="paypal-hackathon-manager-agent"
+)
+
+# Instrument smolagents
+SmolagentsInstrumentor().instrument(
+    tracer_provider=tracer_provider
+)
+
 
 def fetch_json(url: str) -> dict | list:
     request = Request(
@@ -30,11 +43,11 @@ def fetch_merchants_to_refresh() -> list[dict]:
     Returns:
         A list of merchant records, each containing a merchant ID.
     """
-    api_url = os.getenv("MERCHANT_API_URL")
+    api_url = os.getenv("API_URL")
     if not api_url:
-        raise ValueError("MERCHANT_API_URL is not configured.")
+        raise ValueError("API_URL is not configured.")
 
-    data = fetch_json(f"{api_url}/merchants/needs-refresh")
+    data = fetch_json(f"{api_url}/merchants/getMerchantToRefresh")
 
     if not isinstance(data, list):
         raise ValueError("Expected a list of merchants.")
@@ -48,41 +61,67 @@ def collect_merchant_order_evidence(merchant_id: str) -> dict:
     Fetch a merchant's orders and calculate order-performance metrics.
 
     Args:
-        merchant_id: The merchant's unique identifier.
+        merchant_id: The unique ID of the merchant whose orders
+            need to be fetched and analyzed.
 
     Returns:
-        Order counts and calculated performance rates.
+        A dictionary containing order counts, product quantities and calculated
+        performance rates for the merchant.
     """
-    api_url = os.getenv("MERCHANT_API_URL")
+    api_url = os.getenv("API_URL")
     if not api_url:
-        raise ValueError("MERCHANT_API_URL is not configured.")
+        raise ValueError("API_URL is not configured.")
 
     orders = fetch_json(
-        f"{api_url}/merchants/{merchant_id}/orders"
+        f"{api_url}/orders/getOrdersFromMerchantId?merchantId={merchant_id}"
     )
 
     if not isinstance(orders, list):
         raise ValueError("Expected a list of orders.")
 
     statuses = Counter(
-        str(order.get("status", "unknown")).strip().lower()
+        str(order.get("orderStatus", "unknown")).strip().lower()
         for order in orders
     )
 
+    # Count orders and product units separately.
     total = len(orders)
-    fulfilled = statuses["fulfilled"]
+    fulfilled = statuses["delivered"]
     returned = statuses["returned"]
     pending = statuses["pending"]
     cancelled = statuses["cancelled"]
 
-    known_statuses = {"fulfilled", "returned", "pending", "cancelled"}
+    known_statuses = {"delivered", "returned", "pending", "cancelled"}
     unknown = sum(
         count
         for status, count in statuses.items()
         if status not in known_statuses
     )
 
-    # Only use terminal statuses for these rates.
+    # Sum product quantities for each order status.
+    quantities = Counter()
+
+    for order in orders:
+        status = str(
+            order.get("orderStatus", "unknown")
+        ).strip().lower()
+
+        quantity = order.get("quantity", 0)
+
+        if (
+            isinstance(quantity, int)
+            and not isinstance(quantity, bool)
+            and quantity >= 0
+        ):
+            quantities[status] += quantity
+
+    total_products = sum(quantities.values())
+
+    fulfilled_products = quantities["delivered"]
+    returned_products = quantities["returned"]
+    cancelled_products = quantities["cancelled"]
+    pending_products = quantities["pending"]
+
     resolved = fulfilled + returned + cancelled
 
     return {
@@ -103,6 +142,18 @@ def collect_merchant_order_evidence(merchant_id: str) -> dict:
                 if resolved else None
             ),
         },
+        "productMetrics": {
+            "totalProducts": total_products,
+            "deliveredProducts": fulfilled_products,
+            "returnedProducts": returned_products,
+            "cancelledProducts": cancelled_products,
+            "pendingProducts": pending_products,
+            "unknownStatusProducts": sum(
+                quantity
+                for status, quantity in quantities.items()
+                if status not in known_statuses
+            ),
+        },
     }
 
 
@@ -119,6 +170,7 @@ def build_merchant_agent():
     return CodeAgent(
         tools=[fetch_merchants_to_refresh, collect_merchant_order_evidence],
         model=model,
+        additional_authorized_imports=["collections", "json", "pathlib", "urllib"],
         instructions=f"""
         {skill_instructions}
 
@@ -132,3 +184,9 @@ def build_merchant_agent():
         5. Return one valid JSON result per merchant.
         """,
     )
+
+if __name__ == "__main__":
+    load_dotenv()
+    agent = build_merchant_agent()
+    result = agent.run("Give merchant reliability scores.")
+    print(json.dumps(result, indent=2))

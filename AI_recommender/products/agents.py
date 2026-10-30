@@ -37,11 +37,25 @@ from urllib.request import Request, urlopen
 
 from dotenv import load_dotenv
 from smolagents import CodeAgent, OpenAIModel, ToolCallingAgent, tool
-from search import search_products_by_similarity,search_catalog
+from .search import search_products_by_similarity
+
+from phoenix.otel import register
+from openinference.instrumentation.smolagents import SmolagentsInstrumentor
+
+# Register Phoenix as the trace destination
+tracer_provider = register(
+    project_name="paypal-hackathon-product-agent"
+)
+
+# Instrument smolagents
+SmolagentsInstrumentor().instrument(
+    tracer_provider=tracer_provider
+)
+
 
 load_dotenv()
 
-HERE = Path(__file__).parent
+HERE = Path(__file__).resolve().parent.parent
 CATALOG_PATH = HERE / "products.json"
 CATALOG = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
 HEADERS = {
@@ -63,7 +77,7 @@ def _first(item, *keys, default=None):
     return default
 
 
-def _merchant_data(product):
+def _merchant_score(product):
     """Return the merchant score given the productId"""
     pass
 
@@ -194,15 +208,19 @@ def find_scam_phrases(text: str) -> list:
 
 
 @tool
-def compute_trust_score(price_ratio: float, scam_hits: int) -> dict:
+def compute_trust_score(price_ratio: float, scam_hits: int, reference_found: bool) -> dict:
     """Compute a deterministic listing trust score from 0 to 100.
 
     Args:
-        price_ratio: Listed price divided by reference market price; use 1.0 if unavailable.
+        price_ratio: Listed price divided by reference market price (ignored if no reference).
         scam_hits: Number of suspicious phrases found.
+        reference_found: Whether a reference market price was found.
     """
     score, reasons = 100, []
-    if price_ratio < 0.6:
+    if not reference_found:
+        score = 60   # price can't be verified, so don't give full marks
+        reasons.append("No reference price found; price could not be verified.")
+    elif price_ratio < 0.6:
         score -= 25
         reasons.append("Price is unusually low compared with the reference market.")
     elif price_ratio > 1.5:
@@ -211,8 +229,7 @@ def compute_trust_score(price_ratio: float, scam_hits: int) -> dict:
     if scam_hits:
         score -= min(10 * scam_hits, 25)
         reasons.append(f"{scam_hits} suspicious sales phrase(s) found.")
-    return {"trustScore": max(score, 0), "trustReasons": reasons or ["No major listing-level warning found."]}
-
+    return {"trustScore": max(score, 0), "trustReasons": reasons}
 
 @tool
 def rank_listings(verified: list, budget: float) -> list:
@@ -297,7 +314,7 @@ def build_manager():
     )
 
     search_agent = ToolCallingAgent(
-        tools=[search_catalog,search_products_by_similarity], model=model, max_steps=4,
+        tools=[search_products_by_similarity], model=model, max_steps=4,
         name="search_agent",
         description="Searches the product catalog. Always search by the user's product/category terms and budget.",
         instructions=UNTRUSTED,

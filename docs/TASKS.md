@@ -17,12 +17,13 @@ This document tracks implementation tasks, ownership, and progress for the hacka
 
 ### Tasks
 - [x] Create the basic AI screener.
-- [ ] Incorporate merchant verification status into risk assessment.
-- [ ] Consider total orders received when evaluating merchant reliability.
-- [ ] Consider completed orders when evaluating merchant reliability.
-- [ ] Consider returned orders when evaluating merchant reliability.
-- [ ] Define how these factors influence the final screening result.
-- [ ] Test the screener against verified, unverified, and merchants with different order histories.
+- [x] Incorporate merchant verification status into risk assessment.
+- [x] Consider total orders received when evaluating merchant reliability.
+- [x] Consider completed orders when evaluating merchant reliability.
+- [x] Consider returned orders when evaluating merchant reliability.
+- [x] Define how these factors influence the final screening result.
+- [x] Test the screener against verified, unverified, and merchants with different order histories.
+- [] Need to improve the ranking system
 
 **Notes:** The basic screener exists. The merchant verification and order-history signals still need to be integrated.
 
@@ -71,7 +72,7 @@ This document tracks implementation tasks, ownership, and progress for the hacka
 
 ### Tasks
 - [ ] Implement backend handling for merchant registration details.
-- [ ] Store merchant information in the database.
+- [x] Store merchant information in the database.
 - [ ] Generate a unique DNS TXT verification token.
 - [ ] Implement DNS TXT record verification for the merchant's domain.
 - [ ] Implement email code generation and verification.
